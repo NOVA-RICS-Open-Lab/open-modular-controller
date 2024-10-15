@@ -31,8 +31,8 @@ Lisbon, 2829-516 Lisbon, Portugal
 ## Get Started
 The following steps will help you guide in the repository, with the objective of having the necessary files to print the pcb and order the necessary components to make a functional board:
 1. Find the [Gereber.zip](./docs/pcb/Gerbers.zip) and order (such as <https://jlcpcb.com/> or similar) or print your own pcb.
-2. Have the components found in the [materials.csv](./docs/pcb/materials.csv).
-3. Proceed the assembly of the pcb board, carefully assembly with the correct tools.
+2. Have the components found in the [materials.pdf](./docs/pcb/Schematic_and_materials/materials.pdf).
+3. Proceed the assembly of the pcb board, carefully assembly with the correct tools. Follow the schematic at [PCB_schematic](./docs/pcb/Schematic_and_materials/PCB_schematic.png).
 4. Teste the whole board for short circuits, bad weldings and voltage reach. We recomend using a multimeter for this step.
 5. Assemble the ESP with the designated code and test each pin in isolation
 
@@ -55,7 +55,8 @@ open-modular-controller
 └── tests               # tests
 ```
 ## Documentation
-
+The resistores R1, R4, R5, R6, R9, R13 and R21 that originally where 1.1K were changed to the 33K this is already altered in the schematic and materials. <br>
+This changed occured as some conveyor belts did not work with the previous values, however it is important to document this change for further debuging.
 ## Features
 
 ## Contribution Guidelines

@@ -1,0 +1,18 @@
+Qty;Value;LibPart;Footprint;Mauser Link;Notas
+2;1uF;Device:Capacitor;Capacitor_THT:CP_Radial_D5.0mm_P2.00mm;https://mauser.pt/catalog/product_info.php?products_id=004-0013;
+2;0.1uF;Device:Capacitor;Capacitor_THT:CP_Radial_D5.0mm_P2.00mm;https://mauser.pt/catalog/product_info.php?products_id=004-0001;
+0;1.1k;Device:Resistor;Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal;https://mauser.pt/catalog/product_info.php?products_id=104-7459;Não existem resistências destas. As de 1,2K funcionam/// Foram subestituidas por 33K
+7;100k;Device:Resistor;Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal;https://mauser.pt/catalog/product_info.php?products_id=104-7060;
+9;100R;Device:Resistor;Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal;https://mauser.pt/catalog/product_info.php?products_id=104-7358;
+1;164R;Device:Resistor;Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal;https://mauser.pt/catalog/product_info.php?products_id=104-7478;Não existem resistências destas. As de 150 funcionam
+3;1k;Device:Resistor;Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal;https://mauser.pt/catalog/product_info.php?products_id=104-7597;
+21;33k;Device:Resistor;Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal;https://mauser.pt/catalog/product_info.php?products_id=104-7794;
+1;460R;Device:Resistor;Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal;;Não existem resistências destas. As de 470 funcionam
+3;6,27k;Device:Resistor;Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal;https://mauser.pt/catalog/product_info.php?products_id=104-7668;Não existem resistências destas. As de 6,2K funcionam
+7;BC547;Transistor_BJT:BC547;Package_TO_SOT_THT:TO-18-3;https://mauser.pt/catalog/product_info.php?products_id=002-0243;
+14;EL817;Isolator:EL817;Package_DIP:DIP-4_W7.62mm;https://mauser.pt/catalog/product_info.php?products_id=002-1805;
+2;LM317_TO-220;Regulator_Linear:LM317_TO-220;Package_TO_SOT_THT:TO-220-3_Vertical;https://mauser.pt/catalog/product_info.php?products_id=001-9061;
+3;Screw_Terminal_01x02;Connector:Screw_Terminal_01x02;TerminalBlock_Phoenix:TerminalBlock_Phoenix_MPT-0,5-2-2.54_1x02_P2.54mm_Horizontal;https://mauser.pt/catalog/product_info.php?products_id=011-1612;
+1;Screw_Terminal_01x03;Connector:Screw_Terminal_01x03;TerminalBlock_Phoenix:TerminalBlock_Phoenix_MPT-0,5-3-2.54_1x03_P2.54mm_Horizontal;https://mauser.pt/catalog/product_info.php?products_id=011-2824;
+1;Screw_Terminal_01x04;Connector:Screw_Terminal_01x04;TerminalBlock_Phoenix:TerminalBlock_Phoenix_MPT-0,5-4-2.54_1x04_P2.54mm_Horizontal;https://mauser.pt/catalog/product_info.php?products_id=011-2825;
+2;Screw_Terminal_01x07;Connector:Screw_Terminal_01x07;TerminalBlock_Phoenix:TerminalBlock_Phoenix_MPT-0,5-7-2.54_1x07_P2.54mm_Horizontal;;Combinar um bloco de 3 com um bloco de 4
