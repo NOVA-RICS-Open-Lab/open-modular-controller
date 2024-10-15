@@ -15,7 +15,6 @@
 and Associated Lab of Intelligent Systems (LASI), NOVA University
 Lisbon, 2829-516 Lisbon, Portugal
 
-
 <table>
   <tr>
     <td style="vertical-align: top;">
