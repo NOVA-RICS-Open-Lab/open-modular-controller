@@ -2,7 +2,7 @@
 
 name: 🐛 Bug Report
 # title: " "
-description: Problems Open Modular Controller Project
+description: Problems with the Open Modular Controller
 labels: [bug]
 body:
   - type: markdown
