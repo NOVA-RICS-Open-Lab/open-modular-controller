@@ -1,74 +1,48 @@
-<div  align="center"> 
+# Academic Project Page Template
+This is an academic paper project page template.
 
-# Open Modular Controller for Automation Technologies
-[![License: MIT](https://img.shields.io/badge/License-MIT-red.svg)](https://opensource.org/licenses/MIT)
-[![DOI](https://zenodo.org/badge/DOI/10.1109/ICPS59941.2024.10639979.svg)](https://doi.org/10.1109/ICPS59941.2024.10639979)
 
-[Joao Potier](https://pt.linkedin.com/in/jo%C3%A3o-potier-5b1301228?trk=public_profile_samename-profile)\*<sup>1</sup>, 
-[Miguel Arvana](https://scholar.google.com/citations?user=UBvr388AAAAJ&hl=pt-PT)\*<sup>1</sup>,
-[Leandro Filipe](https://scholar.google.pt/citations?user=SoIohJwAAAAJ&hl=en)\*<sup>1</sup>,
-[Fabio M-Oliveira](https://www.researchgate.net/profile/Fabio-M-Oliveira)<sup>1</sup>,
-[Andre Rocha](https://scholar.google.pt/citations?user=k1GIyqcAAAAJ&hl=pt-PT)<sup>1</sup>,
-[Jose Barata](https://scholar.google.pt/citations?user=4G8tKCsAAAAJ&hl=en)<sup>1</sup>
+Example project pages built using this template are:
+- https://vision.huji.ac.il/spectral_detuning/
+- https://vision.huji.ac.il/podd/
+- https://dreamix-video-editing.github.io
+- https://vision.huji.ac.il/conffusion/
+- https://vision.huji.ac.il/3d_ads/
+- https://vision.huji.ac.il/ssrl_ad/
+- https://vision.huji.ac.il/deepsim/
 
-<sup>1</sup> **NOVA School of Science and Technology, Center of Technology and Systems (UNINOVA-CTS)**,
-and Associated Lab of Intelligent Systems (LASI), NOVA University
-Lisbon, 2829-516 Lisbon, Portugal
 
-<sub>* equal contribution</sub>
 
-<table>
-  <tr>
-    <td style="vertical-align: top;">
-      This work proposes the development of a controller, with modularity and flexibility as the core ideas, that allows for the integration of open-source standards like the proprietary technologies used in emergent factories and automation technologies. The implementation of this architecture led to the development of a prototype modular industrial controller that is, on average, a quarter of the cost of the new generation of industrial controllers. The developed controller was tested and validated using some educational kits.
-    </td>
-    <td style="vertical-align: top;">
-      <img style="width: 1100px" src="imgs/PCB_4.jpg" alt="pcb" width="200"/>
-    </td>
-  </tr>
-</table>
+## Start using the template
+To start using the template click on `Use this Template`.
 
-</div>
+The template uses html for controlling the content and css for controlling the style. 
+To edit the websites contents edit the `index.html` file. It contains different HTML "building blocks", use whichever ones you need and comment out the rest.  
 
-## Get Started
+**IMPORTANT!** Make sure to replace the `favicon.ico` under `static/images/` with one of your own, otherwise your favicon is going to be a dreambooth image of me.
 
-...
+## Components
+- Teaser video
+- Images Carousel
+- Youtube embedding
+- Video Carousel
+- PDF Poster
+- Bibtex citation
 
-### Usage instructions
+## Tips:
+- The `index.html` file contains comments instructing you what to replace, you should follow these comments.
+- The `meta` tags in the `index.html` file are used to provide metadata about your paper 
+(e.g. helping search engine index the website, showing a preview image when sharing the website, etc.)
+- The resolution of images and videos can usually be around 1920-2048, there rarely a need for better resolution that take longer to load. 
+- All the images and videos you use should be compressed to allow for fast loading of the website (and thus better indexing by search engines). For images, you can use [TinyPNG](https://tinypng.com), for videos you can need to find the tradeoff between size and quality.
+- When using large video files (larger than 10MB), it's better to use youtube for hosting the video as serving the video from the website can take time.
+- Using a tracker can help you analyze the traffic and see where users came from. [statcounter](https://statcounter.com) is a free, easy to use tracker that takes under 5 minutes to set up. 
+- This project page can also be made into a github pages website.
+- Replace the favicon to one of your choosing (the default one is of the Hebrew University). 
+- Suggestions, improvements and comments are welcome, simply open an issue or contact me. You can find my contact information at [https://pages.cs.huji.ac.il/eliahu-horwitz/](https://pages.cs.huji.ac.il/eliahu-horwitz/)
 
-...
+## Acknowledgments
+Parts of this project page were adopted from the [Nerfies](https://nerfies.github.io/) page.
 
-### Code Structure
-```
-open-modular-controller         
-├── docs                # documentation
-│   └── ...
-├── imgs                # images
-├── src                 # evaluation code
-│   ├── ...                     # ...
-└── tests               # tests
-```
-## Documentation
-
-## Features
-
-## Contribution Guidelines
-NOVA RICS OPEN LAB open source, and we welcome contributions from the community! See the [Contribution](CONTRIBUTING.md) guide for more information on the development workflow and the internals of the wandb library. For project related bugs and feature requests, visit [GitHub Issues](https://github.com/RICS-UNINOVA/open-modular-controller/issues) or contact (@TODO who to email).
-
-## Citation
-If you use or intend to build on top of  the work in this repo, please consider citing our project:
-```bibtex
-@inproceedings{10639979,
-  author={Potier, João and Arvana, Miguel and Filipe, Leandro and M-Oliveira, Fabio and Rocha, Andre Dionisio and Barata, Jose},
-  booktitle={2024 IEEE 7th International Conference on Industrial Cyber-Physical Systems (ICPS)}, 
-  title={Development of an Open, Modular Controller for Training in Emergent Automation Technologies}, 
-  year={2024},
-  doi={10.1109/ICPS59941.2024.10639979}
-}
-```
-
-## License
-This repository is released under the MIT License. Please see the [LICENSE](LICENSE) file for more details.
-
-## Contacts
-(@TODO who to contact)
+## Website License
+<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
