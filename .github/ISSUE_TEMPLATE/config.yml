@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 📄 Docs
+    url: https://github.com/NOVA-RICS-Open-Lab/open-modular-controller/tree/main/docs
+    about: Please check our documentation before reporting any issue.
+  - name: 💬 Forum
+    url: https://github.com/NOVA-RICS-Open-Lab/open-modular-controller/discussions
+    about: Please ask and answer questions here.
