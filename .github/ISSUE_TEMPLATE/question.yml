@@ -17,7 +17,7 @@ body:
         Please search the [issues](https://github.com/NOVA-RICS-Open-Lab/open-modular-controller/issues) and [discussions](https://github.com/NOVA-RICS-Open-Lab/open-modular-controller/discussions) to see if a similar question already exists.
       options:
         - label: >
-            I have searched the YOLOv5 [issues](https://github.com/NOVA-RICS-Open-Lab/open-modular-controller/issues) and [discussions](https://github.com/NOVA-RICS-Open-Lab/open-modular-controller/discussions) and found no similar questions.
+            I have searched the Open Modular Controller [issues](https://github.com/NOVA-RICS-Open-Lab/open-modular-controller/issues) and [discussions](https://github.com/NOVA-RICS-Open-Lab/open-modular-controller/discussions) and found no similar questions.
           required: true
 
   - type: textarea

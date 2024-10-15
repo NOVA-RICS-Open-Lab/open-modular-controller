@@ -1,6 +1,6 @@
 cff-version: 1.2.0
 preferred-citation:
-  type: software
+  type: inproceedings
   message: If you use this work, please consider citing it as below.
   authors:
   - family-names: Potier

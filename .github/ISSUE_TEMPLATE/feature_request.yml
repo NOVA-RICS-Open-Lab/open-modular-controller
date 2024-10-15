@@ -25,7 +25,7 @@ body:
       label: Description
       description: A short description of your feature.
       placeholder: |
-        What new feature would you like to see in YOLOv5?
+        What new feature would you like to see in Open Modular Controller?
     validations:
       required: true
 
