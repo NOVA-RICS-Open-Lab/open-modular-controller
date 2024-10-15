@@ -12,7 +12,7 @@ If you find a bug, we would love to hear about it! Please check if the issue has
 - Any screenshots or error messages that can help in identifying the problem.
 
 ### 2. Suggesting Enhancements
-Got an idea for a new feature? Before creating a new issue, please check whether your feature request already exists. If not, create a [feature request issue](.github\ISSUE_TEMPLATE\feature_request.md) and include:
+Got an idea for a new feature? Before creating a new issue, please check whether your feature request already exists. If not, create a [feature request issue](.github/ISSUE_TEMPLATE/feature_request.md) and include:
 - A clear description of the feature or improvement.
 - Any mockups, diagrams, or code snippets that can explain the enhancement.
 
@@ -36,6 +36,6 @@ Good documentation helps other developers understand and use your work. If you'd
 All code contributions will be reviewed by one or more maintainers. Please be patient and polite when waiting for feedback. If requested, make any necessary changes and re-submit your PR.
 
 ### 6. Community Guidelines
-Please read our [Code of Conduct](.\CODE_OF_CONDUCT.md) to understand how we expect all contributors to behave in the community.
+Please read our [Code of Conduct](CODE_OF_CONDUCT.md) to understand how we expect all contributors to behave in the community.
 
 Thank you for helping us make **Open Modular Controller** a great open-source project!
