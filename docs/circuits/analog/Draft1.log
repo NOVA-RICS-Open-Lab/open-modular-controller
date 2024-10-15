@@ -1,0 +1,27 @@
+Circuit: * C:\Users\JoaoPotier\Desktop\5ºAno\TESE\2_Fase\Circuitos Eletricos\Sinais Analógicos\Draft1.asc
+
+Warning: Multiple definitions of model "2scr375p" Type: BJT
+Warning: Multiple definitions of model "bc857b" Type: BJT
+Warning: Multiple definitions of model "bc847c" Type: BJT
+Warning: Multiple definitions of model "bc847b" Type: BJT
+WARNING: Less than two connections to node n005.  This node is used by q1.
+Direct Newton iteration for .op point succeeded.
+
+Date: Thu Jun 29 15:04:40 2023
+Total elapsed time: 0.166 seconds.
+
+tnom = 27
+temp = 27
+method = modified trap
+totiter = 23986
+traniter = 23958
+tranpoints = 7415
+accept = 5560
+rejected = 1855
+matrix size = 15
+fillins = 0
+solver = Normal
+Avg thread counts: 1.0/1.0/1.0/1.0
+Matrix Compiler1: 720 bytes object code size  0.4/0.4/[0.3]
+Matrix Compiler2: off  [0.3]/0.7/0.3
+
