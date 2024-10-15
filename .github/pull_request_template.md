@@ -1,26 +1,28 @@
-### Description
+## Description
 
 Please include a summary of the changes and the related issue. Explain the motivation behind the changes.
 
 Fixes # (issue)
 
-### Type of change
+## Type of change
 Please delete options that are not relevant.
 
-- [ ] Bug fix (non-breaking change that fixes an issue)
-- [ ] New feature (non-breaking change that adds functionality)
-- [ ] Breaking change (fix or feature that would cause existing functionality to not work as expected)
+- [ ] Bug fix
+- [ ] New feature
+- [ ] Optimization
+- [ ] Breaking change 
 - [ ] Documentation update
 
-### How Has This Been Tested?
+## How Has This Been Tested?
 
 Please describe the tests that you ran to verify your changes. Provide instructions so that reviewers can replicate your testing.
 
 - [ ] Unit tests
 - [ ] Integration tests
-- [ ] Manual tests
+- [ ] Manual/Hardware tests
+- [ ] No tests, and this is why: *please replace this line with details on why tests have not been included*
 
-### Checklist:
+## Checklist:
 - [ ] I have read the contributing guidelines.
 - [ ] I have run the tests and confirmed they pass.
 - [ ] I have updated the documentation if necessary.
