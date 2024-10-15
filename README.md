@@ -4,9 +4,9 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-red.svg)](https://opensource.org/licenses/MIT)
 [![DOI](https://zenodo.org/badge/DOI/10.1109/ICPS59941.2024.10639979.svg)](https://doi.org/10.1109/ICPS59941.2024.10639979)
 
-[Joao Potier](https://pt.linkedin.com/in/jo%C3%A3o-potier-5b1301228?trk=public_profile_samename-profile)\*<sup>1</sup>, 
-[Miguel Arvana](https://scholar.google.com/citations?user=UBvr388AAAAJ&hl=pt-PT)\*<sup>1</sup>,
-[Leandro Filipe](https://scholar.google.pt/citations?user=SoIohJwAAAAJ&hl=en)\*<sup>1</sup>,
+[Joao Potier](https://pt.linkedin.com/in/jo%C3%A3o-potier-5b1301228?trk=public_profile_samename-profile)<sup>1</sup>, 
+[Miguel Arvana](https://scholar.google.com/citations?user=UBvr388AAAAJ&hl=pt-PT)<sup>1</sup>,
+[Leandro Filipe](https://scholar.google.pt/citations?user=SoIohJwAAAAJ&hl=en)<sup>1</sup>,
 [Fabio M-Oliveira](https://www.researchgate.net/profile/Fabio-M-Oliveira)<sup>1</sup>,
 [Andre Rocha](https://scholar.google.pt/citations?user=k1GIyqcAAAAJ&hl=pt-PT)<sup>1</sup>,
 [Jose Barata](https://scholar.google.pt/citations?user=4G8tKCsAAAAJ&hl=en)<sup>1</sup>
@@ -15,7 +15,6 @@
 and Associated Lab of Intelligent Systems (LASI), NOVA University
 Lisbon, 2829-516 Lisbon, Portugal
 
-<sub>* equal contribution</sub>
 
 <table>
   <tr>
@@ -31,8 +30,12 @@ Lisbon, 2829-516 Lisbon, Portugal
 </div>
 
 ## Get Started
+The following steps will help you guide in the repository, with the objective of having the necessary files to print the pcb and order the necessary components to make a functional board:
+1. Find the [Gereber.zip](./docs/pcb/Gerbers.zip) and order (such as <https://jlcpcb.com/> or similar) or print your own pcb.
+2. Have the components found in the [materials.csv](./docs/pcb/materials.csv).
+3. Proceed the assembly of the pcb board, carefully assembly with the correct tools.
+4. Teste the whole board for short circuits, such as 
 
-...
 
 ### Usage instructions
 
@@ -71,4 +74,4 @@ If you use or intend to build on top of  the work in this repo, please consider 
 This repository is released under the MIT License. Please see the [LICENSE](LICENSE) file for more details.
 
 ## Contacts
-(@TODO who to contact)
+Contact us at novaricsopenlab@gmail.com
