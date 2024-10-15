@@ -34,12 +34,16 @@ The following steps will help you guide in the repository, with the objective of
 1. Find the [Gereber.zip](./docs/pcb/Gerbers.zip) and order (such as <https://jlcpcb.com/> or similar) or print your own pcb.
 2. Have the components found in the [materials.csv](./docs/pcb/materials.csv).
 3. Proceed the assembly of the pcb board, carefully assembly with the correct tools.
-4. Teste the whole board for short circuits, such as 
+4. Teste the whole board for short circuits, bad weldings and voltage reach. We recomend using a multimeter for this step.
+5. Assemble the ESP with the designated code and test each pin in isolation
+
+If everything is good until, congratulations! You have a functional board!
 
 
 ### Usage instructions
-
-...
+After having a fully functional board and ESP, the usage of such device is straight forward. The ESP will control the input and output of each pin. Having a standard pin input/output voltage of 24v.
+These are control pins as such is not recomend to put on heavy current load.
+The code present in [testes](./tests/) present a good overview and tests made to this board, as well as the code and librarys in [code](./src/) show a first initial step to use the librarys and teste the board.
 
 ### Code Structure
 ```
