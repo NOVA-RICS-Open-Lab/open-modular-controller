@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+preferred-citation:
+  type: software
+  message: If you use this work, please consider citing it as below.
+  authors:
+  
+  version: 7.0
+  doi: 10.1109/ICPS59941.2024.10639979
+  date-released: 2020-5-29
+  license: MIT-3.0
+  url: "https://github.com/NOVA-RICS-Open-Lab/open-modular-controller"
