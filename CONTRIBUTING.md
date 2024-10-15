@@ -12,7 +12,7 @@ If you find a bug, we would love to hear about it! Please check if the issue has
 - Any screenshots or error messages that can help in identifying the problem.
 
 ### 2. Suggesting Enhancements
-Got an idea for a new feature? Before creating a new issue, please check whether your feature request already exists. If not, create a [feature request issue](.github/ISSUE_TEMPLATE/feature_request.md) and include:
+Got an idea for a new feature? Before creating a new issue, please check whether your feature request already exists. If not, create a [feature request issue](https://github.com/RICS-UNINOVA/open-modular-controller/issues) and include:
 - A clear description of the feature or improvement.
 - Any mockups, diagrams, or code snippets that can explain the enhancement.
 
