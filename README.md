@@ -41,8 +41,8 @@ If everything is good until, congratulations! You have a functional board!
 
 
 ### Usage instructions
-After having a fully functional board and ESP, the usage of such device is straight forward. The ESP will control the input and output of each pin. Having a standard pin input/output voltage of 24v.
-These are control pins as such is not recomend to put on heavy current load.
+After having a fully functional board and ESP, the usage of such device is straight forward. The ESP will control the input and output of each pin. Having a standard pin input/output voltage of 24v.<br>
+These are control pins as such is not recomend to put on heavy current load.<br>
 The code present in [testes](./tests/) present a good overview and tests made to this board, as well as the code and librarys in [code](./src/) show a first initial step to use the librarys and teste the board.
 
 ### Code Structure
@@ -60,7 +60,7 @@ open-modular-controller
 ## Features
 
 ## Contribution Guidelines
-NOVA RICS OPEN LAB open source, and we welcome contributions from the community! See the [Contribution](CONTRIBUTING.md) guide for more information on the development workflow and the internals of the wandb library. For project related bugs and feature requests, visit [GitHub Issues](https://github.com/NOVA-RICS-Open-Lab/open-modular-controller/issues) or contact (@TODO who to email).
+NOVA RICS OPEN LAB open source, and we welcome contributions from the community! See the [Contribution](CONTRIBUTING.md) guide for more information on the development workflow and the internals of the wandb library. For project related bugs and feature requests, visit [GitHub Issues](https://github.com/NOVA-RICS-Open-Lab/open-modular-controller/issues) or contact novaricsopenlab@gmail.com
 
 ## Citation
 If you use or intend to build on top of  the work in this repo, please consider citing our project:
