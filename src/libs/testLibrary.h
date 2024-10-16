@@ -21,21 +21,13 @@ class Node{
         bool writeDigitalPort(const String pinIdentifier, int value);
         
         //ANALOG I/O
-        int readAnalogPort(const String pinIdentifier);
-
-        //UART COM
-
-        
-
-        //I2C COM
-
-        
+        int readAnalogPort(const String pinIdentifier);      
 
         //SPI COM
         int returnSSnPort();
         int returnMOSIPort();
         int returnMISOPort();
         int returnSCKLPort();
-};
+    };
 
 #endif

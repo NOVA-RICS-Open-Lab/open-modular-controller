@@ -1,7 +1,6 @@
 extern "C" {
     #include <stdlib.h>
 }
-
 #include "testLibrary.h"
 #include "Arduino.h"
 #include <string>
@@ -10,6 +9,7 @@ extern "C" {
 Node::Node(){
     return;
 }
+
 
 int Node::returnDigitalInputPort(const String pinIdentifier){
             
@@ -39,6 +39,7 @@ int Node::returnDigitalInputPort(const String pinIdentifier){
     }
 }
 
+
 int Node::returnDigitalOutputPort(const String pinIdentifier){
             
     if(pinIdentifier[1]=='1'){
@@ -67,6 +68,7 @@ int Node::returnDigitalOutputPort(const String pinIdentifier){
     }
 }
 
+
 int Node::returnAnalogInputPort(const String pinIdentifier){
     if(pinIdentifier[3]=='0'){
         return 36;
@@ -79,6 +81,7 @@ int Node::returnAnalogInputPort(const String pinIdentifier){
     }
     return 41;    
 }
+
 
 int Node::initDigitalInput(const String pinIdentifier){
     if(pinIdentifier.length()<4 && pinIdentifier.length()!=0 && pinIdentifier[0]=='I'){
@@ -98,6 +101,7 @@ int Node::initDigitalInput(const String pinIdentifier){
     }
 }
 
+
 int Node::initDigitalOutput(const String pinIdentifier){
     if(pinIdentifier.length() < 4 && pinIdentifier.length() != 0 && pinIdentifier[0] == 'O'){
         int port = returnDigitalOutputPort(pinIdentifier);
@@ -116,6 +120,7 @@ int Node::initDigitalOutput(const String pinIdentifier){
     }
 }
 
+
 int Node::readDigitalPort(const String pinIdentifier){ //Verificar se esta inicializado
     if(pinIdentifier.length()<4 && pinIdentifier.length()!=0 && pinIdentifier[0]=='I'){
         int port = returnDigitalInputPort(pinIdentifier);
@@ -132,6 +137,7 @@ int Node::readDigitalPort(const String pinIdentifier){ //Verificar se esta inici
         return -1;
     }
 }
+
 
 bool Node::writeDigitalPort(const String pinIdentifier, int value){ //Verificar se esta inicializado
     if(pinIdentifier.length()<4 && pinIdentifier.length()!=0 && pinIdentifier[0]=='O'){
@@ -150,6 +156,7 @@ bool Node::writeDigitalPort(const String pinIdentifier, int value){ //Verificar 
         return false;
     }
 }
+
 
 int Node::readAnalogPort(const String pinIdentifier){
     if(pinIdentifier.length()<4 && pinIdentifier.length()!=0 && pinIdentifier[0]=='A'){
@@ -173,13 +180,16 @@ int returnSSnPort(){
     return 15;
 }
 
+
 int returnMOSIPort(){
     return 13;
 }
 
+
 int returnMISOPort(){
     return 12;
 }
+
 
 int returnSCKLPort(){
     return 14;

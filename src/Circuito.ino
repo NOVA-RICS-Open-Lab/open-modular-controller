@@ -1,12 +1,15 @@
 #include <testLibrary.h>
 
+
 Node node = Node();
 int in1, in2;
+
 
 void setup() {
   node.initDigitalInput("I6");
   Serial.begin(9600);
 }
+
 
 void loop() {
   in2 = node.readDigitalPort("I6");
