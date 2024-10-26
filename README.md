@@ -28,41 +28,71 @@ Lisbon, 2829-516 Lisbon, Portugal
 
 </div>
 
-## Get Started
-The following steps will help you guide in the repository, with the objective of having the necessary files to print the pcb and order the necessary components to make a functional board:
-1. Find the [Gereber.zip](./docs/pcb/Gerbers.zip) and order (such as <https://jlcpcb.com/> or similar) or print your own pcb.
-2. Have the components found in the [materials.pdf](./docs/pcb/Schematic_and_materials/materials.pdf).
-3. Proceed the assembly of the pcb board, carefully assembly with the correct tools. Follow the schematic at [PCB_schematic](./docs/pcb/Schematic_and_materials/PCB_schematic.png).
-4. Teste the whole board for short circuits, bad weldings and voltage reach. We recomend using a multimeter for this step.
-5. Assemble the ESP with the designated code and test each pin in isolation
+## <div align="center">Get Started</div>
+Follow these steps to create your own functional PCB and set up the ESP:
 
-If everything is good until, congratulations! You have a functional board!
+1. **Order or Print the PCB**
+   - Locate the PCB Gerber files in the repository at [Gerber.zip](./docs/pcb/Gerbers.zip).
+   - Upload this zip file to a PCB manufacturer (such as [JLCPCB](https://jlcpcb.com/) or a similar service) to order the PCB, or print it yourself if you have access to the necessary equipment.
 
+2. **Gather Components**
+   - Obtain all components listed in [materials.xtml](./docs/pcb/schematic_and_materials/materials.pdf).
+   - Ensure that you source parts that match the specifications provided for optimal functionality.
+
+3. **Assemble the PCB**
+   - Carefully assemble the PCB following the schematic available [here](./docs/pcb/Schematic_and_materials/schematic.png).
+   - Use appropriate tools and ensure correct orientation and placement of components.
+
+4. **Test the PCB**
+   - Before powering up, inspect the PCB for short circuits, weak solder joints, or other assembly issues.
+   - Use a multimeter to verify connections and confirm proper voltage levels across components.
+
+5. **Program and Test the ESP**
+   - Program the ESP with the provided code, following the setup instructions in the [code](./src/) folder.
+   - Test each pin individually to verify its input and output behavior. The ESP should handle a standard 24V input/output.
+
+If all tests pass, congratulations! Your board is now ready for operation.
+
+---
 
 ### Usage instructions
-After having a fully functional board and ESP, the usage of such device is straight forward. The ESP will control the input and output of each pin. Having a standard pin input/output voltage of 24v.<br>
-These are control pins as such is not recomend to put on heavy current load.<br>
-The code present in [testes](./tests/) present a good overview and tests made to this board, as well as the code and librarys in [code](./src/) show a first initial step to use the librarys and teste the board.
+Once your PCB and ESP setup is complete, you can begin using the device. The ESP manages the input and output for each control pin, with a standard operating voltage of 24V. Please note:
 
-### Code Structure
-```
-open-modular-controller         
-├── docs                # documentation
-│   └── ...
-├── imgs                # images
+- **Control Limitations**: These pins are designed for control signals only. Avoid applying high current loads to prevent damage.
+- **Testing & Example Code**: Refer to the [tests](./tests/) folder for example code and tests that help validate board functionality. Additionally, the [code](./src/) folder provides example libraries and initial setup steps.
+
+@TODO - redirecionar exatamente para os scripts a usar, circuito e testes
+
+Follow these guidelines, and your project should operate as expected!
+
+---
+
+### Project Structure
+For you to better understand this repository organization here is a quick overview of its structure and where to find what you might be looking for:
+```c
+open-modular-controller
+├── docs                # documentation assets
+│   ├── circuits            # digital and analog circuit study
+│   ├── pcb                 # pcb assets and materials
+│   └── thesis.pdf          # master thesis
+├── imgs                # images from this project
 ├── src                 # evaluation code
-│   ├── ...                     # ...
-└── tests               # tests
+│   ├── libs                # developed libraries
+│   └── circuit.ino         # main circuit script
+└── tests               # test examples scripts
 ```
-## Documentation
-The resistores R1, R4, R5, R6, R9, R13 and R21 that originally where 1.1K were changed to the 33K this is already altered in the schematic and materials. <br>
-This changed occured as some conveyor belts did not work with the previous values, however it is important to document this change for further debuging.
-## Features
 
-## Contribution Guidelines
+## <div align="center">Documentation</div>
+
+The [docs](./docs/) directory contains extensive resources, including schematics, materials lists, and PCB files, as well as the original master’s dissertation that inspired this project. Explore this folder to access all necessary assets for building, assembling, and understanding the hardware.
+
+> **Note**: The resistors R1, R4, R5, R6, R9, R13, and R21, **originally specified as 1.1K, have been updated to 33K** in both the schematic and materials list. This adjustment was made due to performance issues with certain conveyor belts that were not functional with the previous resistor values. Documenting this change is essential for any future debugging.
+
+
+## <div align="center">Contribution Guidelines</div>
 NOVA RICS Open Lab open source, and we welcome contributions from the community! See the [Contribution](CONTRIBUTING.md) guide for more information on the development workflow and the internals of the wandb library. For project related bugs and feature requests, visit [GitHub Issues](https://github.com/NOVA-RICS-Open-Lab/open-modular-controller/issues) or contact novaricsopenlab@gmail.com
 
-## Citation
+## <div align="center">Citation</div>
 If you use or intend to build on top of  the work in this repo, please consider citing our project:
 ```bibtex
 @inproceedings{10639979,
@@ -74,8 +104,8 @@ If you use or intend to build on top of  the work in this repo, please consider 
 }
 ```
 
-## License
+## <div align="center">License</div>
 This repository is released under the MIT License. Please see the [LICENSE](LICENSE) file for more details.
 
-## Contacts
-Contact us at novaricsopenlab@gmail.com
+## <div align="center">Contacts</div>
+For any questions regarding this or any other project please contact us at novaricsopenlab@gmail.com or enroll in our [Discussionw Forum](https://github.com/NOVA-RICS-Open-Lab/open-modular-controller/discussions) for sharing your ideas and sharing projects.
