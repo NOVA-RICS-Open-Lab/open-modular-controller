@@ -69,7 +69,7 @@ Follow these guidelines, and your project should operate as expected!
 
 ### Project Structure
 For you to better understand this repository organization here is a quick overview of its structure and where to find what you might be looking for:
-```c
+```
 open-modular-controller
 ├── docs                # documentation assets
 │   ├── circuits            # digital and analog circuit study
