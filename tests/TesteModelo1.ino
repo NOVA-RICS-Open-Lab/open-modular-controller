@@ -69,7 +69,7 @@ int readMachineLowSensor(){
 }
 
 void loop() {
-   stopPunching();
+  stopPunching();
   stopConveyor();
   
   while(readEntrySensor() != LOW){  //WAIT for a product in the starting position
