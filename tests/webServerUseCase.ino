@@ -1,99 +1,68 @@
-// Import required libraries
 #include <WiFi.h>
 #include <AsyncTCP.h>
 #include <ESPAsyncWebServer.h>
-#include <testLibrary.h>
+#include "protoboardLib.h"
+#include "useCaseKitLib.h"
 
 // Replace with your network credentials
-const char* ssid = "RICS-PUB";
-const char* password = "ricsricsjabjab";
+const char* ssid = "YOUR-SSID";
+const char* password = "YOUR-PASSWORD";
 
 const char* PARAM_INPUT_1 = "output";
 const char* PARAM_INPUT_2 = "state";
-
 const char* STATE = "OFF";
 
 Node node = Node();
 int in1, in2, in3, in4;
 
-
-void stopConveyor(){
-    node.writeDigitalPort("O1",LOW);
-    node.writeDigitalPort("O2",LOW);
-    return;
-}
-void moveConveyorFront(){
-    node.writeDigitalPort("O1",HIGH);
-    node.writeDigitalPort("O2",LOW);
-    return;
-}
-void moveConveyorBack(){
-    node.writeDigitalPort("O1",LOW);
-    node.writeDigitalPort("O2",HIGH);
-    return;
-}
-void movePunchingUp(){
-    node.writeDigitalPort("O3",HIGH);
-    node.writeDigitalPort("O4",LOW);
-    return;
-}
-void movePunchingDown(){
-    node.writeDigitalPort("O3",LOW);
-    node.writeDigitalPort("O4",HIGH);
-    return;
-}
-void stopPunching(){
-    node.writeDigitalPort("O3",LOW);
-    node.writeDigitalPort("O4",LOW);
-    return;
-}
-int readEntrySensor(){
-  return node.readDigitalPort("I1");
-}
-int readWorkStationSensor(){
-  return node.readDigitalPort("I2");
-}
-int readMachineHighSensor(){
-  return node.readDigitalPort("I3");
-}
-int readMachineLowSensor(){
-  return node.readDigitalPort("I4");
-}
-
-//Industrial Kit Movement Sequence
-void WorkingMachine() {
+// Industrial Kit Movement Sequence
+void machineExecution() {
   while(STATE != "OFF"){
       
-  stopPunching();
-  stopConveyor();
-  while(readEntrySensor() != LOW){  //WAIT for a product in the starting position
-    delay(100);
-  }
-  Serial.write("Produto Recebido\n");
-  moveConveyorFront();
-  while(readWorkStationSensor() != LOW){  //WAIT for a product in the Punching station
-    delay(100);
-  }
-  stopConveyor();
-  Serial.write("Produto Na estação\n");
-  while(readMachineLowSensor() != HIGH){
-    movePunchingDown();
-  }
-  stopPunching();
-  delay(1500);
-  while(readMachineHighSensor() != HIGH){
-    movePunchingUp();
-  }
-  stopPunching();
-  while(readEntrySensor() != LOW){  //WAIT for a product in the starting position
-    moveConveyorBack();
-  }
-  stopConveyor();
-  Serial.write("Produto Acabado\n");
+    stopPunching();
+    stopConveyor();
+
+    // WAIT for a product in the starting position
+    while(readEntrySensor() != LOW){  
+      delay(100);
+    }
+
+    Serial.write("Product received\n");
+    moveConveyorFront();
+
+    // WAIT for a product in the Punching station
+    while(readWorkStationSensor() != LOW){  
+      delay(100);
+    }
+
+    stopConveyor();
+    Serial.write("Product in station\n");
+
+    // EXECUTE Punching routine
+    while(readMachineLowSensor() != HIGH){
+      movePunchingDown();
+    }
+
+    stopPunching();
+    delay(1500);
+
+    while(readMachineHighSensor() != HIGH){
+      movePunchingUp();
+    }
+
+    stopPunching();
+
+    // WAIT for a product in the starting position
+    while(readEntrySensor() != LOW){  
+      moveConveyorBack();
+    }
+
+    stopConveyor();
+    Serial.write("Process finished\n");
+
   }
   return;
 }
-
 
 // Create AsyncWebServer object on port 80
 AsyncWebServer server(80);
@@ -150,6 +119,7 @@ const char index_html[] PROGMEM = R"rawliteral(
 </html>
 )rawliteral";
 
+
 String outputState(){
   if(STATE == "ON"){
     return "checked";
@@ -158,6 +128,7 @@ String outputState(){
     return "";
   }
 }
+
 
 // Replaces placeholder with button section in your web page
 String processor(const String& var){
@@ -184,7 +155,6 @@ void setup(){
   node.initDigitalOutput("O3");
   node.initDigitalOutput("O4");
 
-
   // Connect to Wi-Fi
   WiFi.begin(ssid, password);
   while (WiFi.status() != WL_CONNECTED) {
@@ -204,21 +174,27 @@ void setup(){
   server.on("/update", HTTP_GET, [] (AsyncWebServerRequest *request) {
     String inputMessage1;
     String inputMessage2;
+
     // GET input1 value on <ESP_IP>/update?output=<inputMessage1>&state=<inputMessage2>
     if (request->hasParam(PARAM_INPUT_1) && request->hasParam(PARAM_INPUT_2)) {
       inputMessage1 = request->getParam(PARAM_INPUT_1)->value();
       inputMessage2 = request->getParam(PARAM_INPUT_2)->value();
+
       if(inputMessage2.toInt()==1){
         STATE="ON";
       }
+
       else{
         STATE="OFF";
-        }
+      }
+
     }
+
     else {
       inputMessage1 = "No message sent";
       inputMessage2 = "No message sent";
     }
+
     Serial.print("MACHINE: ");
     Serial.print(inputMessage1);
     Serial.print(" - Set to: ");
@@ -230,6 +206,7 @@ void setup(){
   server.begin();
 }
 
+
 void loop() {
-  WorkingMachine();
+  machineExecution();
 }

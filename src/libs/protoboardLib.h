@@ -1,8 +1,8 @@
-#include "Arduino.h"
-#include <string>
-
 #ifndef protoboardLib_h
 #define protoboardLib_h
+
+#include "Arduino.h"
+#include <string>
 
 class Node{
 

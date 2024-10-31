@@ -48,7 +48,7 @@ Follow these steps to create your own functional PCB and set up the ESP:
    - Use a multimeter to verify connections and confirm proper voltage levels across components.
 
 5. **Program and Test the ESP**
-   - Program the ESP with the provided code, following the libraries in the [src/libs](./src/libs) folder. Test your assembled controller and code setup with this short [example](./src/circuit.ino).
+   - Program the ESP with the provided code, following the libraries in the [src/libs](./src/libs) folder. Test your assembled controller and code setup with this short [example](./src/protoboardValid.ino).
    - Test each pin individually to verify its input and output behavior. The ESP should handle a standard 24V input/output.
 
 If all tests pass, congratulations! Your board is now ready for operation.
@@ -76,14 +76,14 @@ open-modular-controller
 ├── imgs                # images from this project
 ├── src                 # evaluation code
 │   ├── libs                # developed libraries
-│   └── protoboardValid.ino         # main circuit validation
+│   └── protoboardValid.ino         # validation circuit
 └── tests               # use case example scripts
 ```
 
 ## <div align="center">Documentation</div>
 The [docs](./docs/) directory contains extensive resources, including schematics, materials lists, and PCB files, as well as the original master’s dissertation that inspired this project. Explore this folder to access all necessary assets for building, assembling, and understanding the hardware.
 
-This use case for protoboard validation provides a more stable connection than a synchronous web server. A toggle switch sends an HTTP request to the Processing Unit Module, initiating movement in the Kit. When the switch is active, it enables continuous operation of the Kit's process. Upon deactivation, the Industrial Kit halts movement at the start of the next cycle.
+The presented use case for the protoboard validation showcases an asynchronous Web Server, providing a more stable connection than a synchronous web server. A toggle switch sends an HTTP request to the Processing Unit Module, initiating movement in the Kit. When the switch is active, it enables continuous operation of the Kit's process. Upon deactivation, the Industrial Kit halts movement at the start of the next cycle.
 
 > **Note**: The resistors R1, R4, R5, R6, R9, R13, and R21, **originally specified as 1.1K, have been updated to 33K** in both the schematic and materials list. This adjustment was made due to performance issues with certain conveyor belts that were not functional with the previous resistor values. Documenting this change is essential for any future debugging.
 

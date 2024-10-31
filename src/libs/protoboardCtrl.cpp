@@ -1,9 +1,10 @@
 extern "C" {
     #include <stdlib.h>
 }
-#include "protoboardLib.h"
+
 #include "Arduino.h"
 #include <string>
+#include "protoboardLib.h"
 
 Node::Node(){
     return;
