@@ -36,11 +36,11 @@ Follow these steps to create your own functional PCB and set up the ESP:
    - Upload this zip file to a PCB manufacturer (such as [JLCPCB](https://jlcpcb.com/) or a similar service) to order the PCB, or print it yourself if you have access to the necessary equipment.
 
 2. **Gather Components**
-   - Obtain all components listed in [materials.xtml](./docs/pcb/schematic_and_materials/materials.pdf).
+   - Obtain all components listed in [materials.xlsx](./docs/pcb/materials.xlsx).
    - Ensure that you source parts that match the specifications provided for optimal functionality.
 
 3. **Assemble the PCB**
-   - Carefully assemble the PCB following the schematic available [here](./docs/pcb/Schematic_and_materials/schematic.png).
+   - Carefully assemble the PCB following the schematic available [here](./imgs/schematic.png).
    - Use appropriate tools and ensure correct orientation and placement of components.
 
 4. **Test the PCB**
@@ -48,7 +48,7 @@ Follow these steps to create your own functional PCB and set up the ESP:
    - Use a multimeter to verify connections and confirm proper voltage levels across components.
 
 5. **Program and Test the ESP**
-   - Program the ESP with the provided code, following the setup instructions in the [code](./src/) folder.
+   - Program the ESP with the provided code, following the libraries in the [src/libs](./src/libs) folder. Test your assembled controller and code setup with this short [example](./src/circuit.ino).
    - Test each pin individually to verify its input and output behavior. The ESP should handle a standard 24V input/output.
 
 If all tests pass, congratulations! Your board is now ready for operation.
@@ -59,9 +59,7 @@ If all tests pass, congratulations! Your board is now ready for operation.
 Once your PCB and ESP setup is complete, you can begin using the device. The ESP manages the input and output for each control pin, with a standard operating voltage of 24V. Please note:
 
 - **Control Limitations**: These pins are designed for control signals only. Avoid applying high current loads to prevent damage.
-- **Testing & Example Code**: Refer to the [tests](./tests/) folder for example code and tests that help validate board functionality. Additionally, the [code](./src/) folder provides example libraries and initial setup steps.
-
-@TODO - redirecionar exatamente para os scripts a usar, circuito e testes
+- **Testing & Example Code**: Refer to the [tests](./tests/) folder for a use case example and tests that help validate board functionality. This includes the protoboard validation, Wi-Fi connection, Web Server and IP connection.
 
 Follow these guidelines, and your project should operate as expected!
 
@@ -83,11 +81,11 @@ open-modular-controller
 ```
 
 ## <div align="center">Documentation</div>
-
 The [docs](./docs/) directory contains extensive resources, including schematics, materials lists, and PCB files, as well as the original master’s dissertation that inspired this project. Explore this folder to access all necessary assets for building, assembling, and understanding the hardware.
 
-> **Note**: The resistors R1, R4, R5, R6, R9, R13, and R21, **originally specified as 1.1K, have been updated to 33K** in both the schematic and materials list. This adjustment was made due to performance issues with certain conveyor belts that were not functional with the previous resistor values. Documenting this change is essential for any future debugging.
+This use case for protoboard validation provides a more stable connection than a synchronous web server. A toggle switch sends an HTTP request to the Processing Unit Module, initiating movement in the Kit. When the switch is active, it enables continuous operation of the Kit's process. Upon deactivation, the Industrial Kit halts movement at the start of the next cycle.
 
+> **Note**: The resistors R1, R4, R5, R6, R9, R13, and R21, **originally specified as 1.1K, have been updated to 33K** in both the schematic and materials list. This adjustment was made due to performance issues with certain conveyor belts that were not functional with the previous resistor values. Documenting this change is essential for any future debugging.
 
 ## <div align="center">Contribution Guidelines</div>
 NOVA RICS Open Lab open source, and we welcome contributions from the community! See the [Contribution](CONTRIBUTING.md) guide for more information on the development workflow and the internals of the wandb library. For project related bugs and feature requests, visit [GitHub Issues](https://github.com/NOVA-RICS-Open-Lab/open-modular-controller/issues) or contact novaricsopenlab@gmail.com
