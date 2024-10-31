@@ -59,7 +59,7 @@ If all tests pass, congratulations! Your board is now ready for operation.
 Once your PCB and ESP setup is complete, you can begin using the device. The ESP manages the input and output for each control pin, with a standard operating voltage of 24V. Please note:
 
 - **Control Limitations**: These pins are designed for control signals only. Avoid applying high current loads to prevent damage.
-- **Testing & Example Code**: Refer to the [tests](./tests/) folder for a use case example and tests that help validate board functionality. This includes the protoboard validation, Wi-Fi connection, Web Server and IP connection.
+- **Testing & Example Code**: Refer to the [tests](./tests/) folder for use case examples and tests that helped validate board functionality. This includes the protoboard validation, Wi-Fi connection, Web Server and IP connection.
 
 Follow these guidelines, and your project should operate as expected!
 
