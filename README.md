@@ -76,8 +76,8 @@ open-modular-controller
 ├── imgs                # images from this project
 ├── src                 # evaluation code
 │   ├── libs                # developed libraries
-│   └── circuit.ino         # main circuit script
-└── tests               # test examples scripts
+│   └── protoboardValid.ino         # main circuit validation
+└── tests               # use case example scripts
 ```
 
 ## <div align="center">Documentation</div>

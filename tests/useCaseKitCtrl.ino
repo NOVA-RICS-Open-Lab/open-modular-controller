@@ -1,9 +1,7 @@
-#include <testLibrary.h>
-
+#include <protoboardLib.h>
 
 Node node = Node();
- int in1, in2, in3, in4;
-
+int in1, in2, in3, in4;
 
 void setup() {
   node.initDigitalInput("D8");
@@ -19,44 +17,44 @@ void setup() {
 
 
 void stopConveyor(){
-    node.writeDigitalPort("D0",LOW);
-    node.writeDigitalPort("D1",LOW);
-    return;
+  node.writeDigitalPort("D0",LOW);
+  node.writeDigitalPort("D1",LOW);
+  return;
 }
 
 
 void moveConveyorFront(){
-    node.writeDigitalPort("D0",HIGH);
-    node.writeDigitalPort("D1",LOW);
-    return;
+  node.writeDigitalPort("D0",HIGH);
+  node.writeDigitalPort("D1",LOW);
+  return;
 }
 
 
 void moveConveyorBack(){
-    node.writeDigitalPort("D0",LOW);
-    node.writeDigitalPort("D1",HIGH);
-    return;
+  node.writeDigitalPort("D0",LOW);
+  node.writeDigitalPort("D1",HIGH);
+  return;
 }
 
 
 void movePunchingDown(){
-    node.writeDigitalPort("D2",HIGH);
-    node.writeDigitalPort("D12",LOW);
-    return;
+  node.writeDigitalPort("D2",HIGH);
+  node.writeDigitalPort("D12",LOW);
+  return;
 }
 
 
 void movePunchingUp(){
-    node.writeDigitalPort("D2",LOW);
-    node.writeDigitalPort("D12",HIGH);
-    return;
+  node.writeDigitalPort("D2",LOW);
+  node.writeDigitalPort("D12",HIGH);
+  return;
 }
 
 
 void stopPunching(){
-    node.writeDigitalPort("D2",LOW);
-    node.writeDigitalPort("D12",LOW);
-    return;
+  node.writeDigitalPort("D2",LOW);
+  node.writeDigitalPort("D12",LOW);
+  return;
 }
 
 
@@ -85,14 +83,19 @@ void loop() {
   stopPunching();
   stopConveyor();
   
-  while(readEntrySensor() != HIGH){  //WAIT for a product in the starting position
+  // WAIT for a product in the starting position
+  while(readEntrySensor() != HIGH){ 
     delay(100);
   }
+
   Serial.write("Produto Recebido\n");
   moveConveyorBack();
-  while(readWorkStationSensor() != HIGH){  //WAIT for a product in the Punching station
+  
+  // WAIT for a product in the Punching station
+  while(readWorkStationSensor() != HIGH){
     delay(100);
   }
+
   stopConveyor();
   Serial.write("Produto Na estação\n");
   
@@ -109,9 +112,11 @@ void loop() {
   Serial.write("Produto Acabado\n");
   stopPunching();
   
-  while(readEntrySensor() != HIGH){  //WAIT for a product in the starting position
+  // WAIT for a product in the starting position
+  while(readEntrySensor() != HIGH){  
     moveConveyorFront();
   }
+
   stopConveyor();
   delay(10000);
 }

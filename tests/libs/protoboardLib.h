@@ -1,8 +1,8 @@
 #include "Arduino.h"
 #include <string>
 
-#ifndef testLibrary_h
-#define testLibrary_h
+#ifndef protoboardLib_h
+#define protoboardLib_h
 
 class Node{
 
@@ -14,16 +14,16 @@ class Node{
     public:
         Node();
         
-        //DIGITAL I/O
+        // DIGITAL I/O
         int initDigitalInput(const String pinIdentifier);
         int initDigitalOutput(const String pinIdentifier);
         int readDigitalPort(const String pinIdentifier);
         bool writeDigitalPort(const String pinIdentifier, int value);
-        
-        //ANALOG I/O
+         
+        // ANALOG I/O
         int readAnalogPort(const String pinIdentifier);      
 
-        //SPI COM
+        // SPI COM
         int returnSSnPort();
         int returnMOSIPort();
         int returnMISOPort();

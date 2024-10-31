@@ -1,10 +1,9 @@
 extern "C" {
     #include <stdlib.h>
 }
-#include "testLibrary.h"
+#include "protoboardLib.h"
 #include "Arduino.h"
 #include <string>
-
 
 Node::Node(){
     return;
@@ -121,7 +120,8 @@ int Node::initDigitalOutput(const String pinIdentifier){
 }
 
 
-int Node::readDigitalPort(const String pinIdentifier){ //Verificar se esta inicializado
+int Node::readDigitalPort(const String pinIdentifier){ 
+    // Verify initialization
     if(pinIdentifier.length()<4 && pinIdentifier.length()!=0 && pinIdentifier[0]=='I'){
         int port = returnDigitalInputPort(pinIdentifier);
         if(port != 41){
@@ -139,7 +139,8 @@ int Node::readDigitalPort(const String pinIdentifier){ //Verificar se esta inici
 }
 
 
-bool Node::writeDigitalPort(const String pinIdentifier, int value){ //Verificar se esta inicializado
+bool Node::writeDigitalPort(const String pinIdentifier, int value){
+    // Verify initialization
     if(pinIdentifier.length()<4 && pinIdentifier.length()!=0 && pinIdentifier[0]=='O'){
         int port = returnDigitalOutputPort(pinIdentifier);
         if(port != 41){
