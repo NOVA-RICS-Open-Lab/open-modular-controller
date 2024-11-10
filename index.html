@@ -13,7 +13,6 @@
   <meta property="og:image:width" content="1200"/>
   <meta property="og:image:height" content="630"/>
 
-
   <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
   <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
   <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
@@ -22,7 +21,6 @@
   <!-- Keywords for your paper to be indexed by-->
   <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
 
   <title>Open Modular Controller</title>
   <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
@@ -46,6 +44,36 @@
 </head>
 
 <body>
+  <nav class="navbar" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+    <div class="navbar-menu">
+      <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
+        <a class="navbar-item" href="https://github.com/NOVA-RICS-Open-Lab">
+        <span class="icon">
+            <svg class="svg-inline--fa fa-home fa-w-18" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="home" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" data-fa-i2svg=""><path fill="currentColor" d="M280.37 148.26L96 300.11V464a16 16 0 0 0 16 16l112.06-.29a16 16 0 0 0 15.92-16V368a16 16 0 0 1 16-16h64a16 16 0 0 1 16 16v95.64a16 16 0 0 0 16 16.05L464 480a16 16 0 0 0 16-16V300L295.67 148.26a12.19 12.19 0 0 0-15.3 0zM571.6 251.47L488 182.56V44.05a12 12 0 0 0-12-12h-56a12 12 0 0 0-12 12v72.61L318.47 43a48 48 0 0 0-61 0L4.34 251.47a12 12 0 0 0-1.6 16.9l25.5 31A12 12 0 0 0 45.15 301l235.22-193.74a12.19 12.19 0 0 1 15.3 0L530.9 301a12 12 0 0 0 16.9-1.6l25.5-31a12 12 0 0 0-1.7-16.93z"></path></svg><!-- <i class="fas fa-home"></i> Font Awesome fontawesome.com -->
+        </span>
+        </a>
+  
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link">
+            More Research
+          </a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="https://github.com/NOVA-RICS-Open-Lab">
+              Other Project
+            </a>
+          </div>
+        </div>
+      </div>
+  
+    </div>
+  </nav>
   <section class="hero">
     <div class="hero-body">
       <div class="container is-max-desktop">
@@ -107,18 +135,17 @@
     </div>
   </section>
 
-
   <!-- Teaser video-->
   <section class="hero teaser">
     <div class="container is-max-desktop">
-      <div class="hero-body">
+      <div class="hero-body has-text-centered">
         <video poster="" id="tree" autoplay controls muted loop height="100%">
           <!-- Your video here -->
           <source src="static/videos/demo_video.mp4"
           type="video/mp4">
         </video>
         <h2 class="subtitle has-text-centered">
-          Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus. 
+          Video of the use case example demonstrating the working capabilities of the protoboard open-controller over two manufacturing kits for part processing with multi-agent communication.
         </h2>
       </div>
     </div>
@@ -133,7 +160,7 @@
           <h2 class="title is-3">Abstract</h2>
           <div class="content has-text-justified">
             <p>
-              In the last decade, the 4th Industrial Revolution has brought new challenges and paradigms to the manufacturing industry in response to the consumers’ requirements demanding highly customisable and personalised products. New standards and technologies to help companies face this need emerged quickly, and the different stakeholders are trying to gain an edge over their competitors. Hence, new technologies are emerging, and training people for those technologies is necessary. One of the emerging technologies is the new generation of industrial controllers capable of running more complex and demanding software on the edge, such as multi-agent agent-based control systems. Consequently, it is necessary to have hardware for the trainees to practice and generate those competencies. This work, with an engineering and electronics aspect, proposes the development of a controller, with modularity and flexibility as the core ideas, that allows for the integration of open-source standards, usually followed by the proprietary technologies used in emergent factories and automation technologies. The implementation of this architecture led to the development of a prototype modular industrial controller that is, on average, a quarter of the cost of the new generation of industrial controllers. The developed controller was tested and validated using some educational kits.
+              Over the last decade, the 4th Industrial Revolution has introduced new challenges to manufacturing as consumers increasingly demand highly customizable products. New technologies and standards have emerged to meet these demands, and stakeholders are racing to stay competitive. Among these technologies are advanced industrial controllers capable of running complex software, such as multi-agent control systems, directly on the edge. Training on such technology requires accessible hardware, which this work addresses by proposing a modular, flexible controller designed for integration with both open-source and proprietary systems used in modern factories. This modular industrial controller prototype, developed at a fraction of the cost of current models, was successfully tested and validated with educational kits.
             </p>
           </div>
         </div>
@@ -141,7 +168,6 @@
     </div>
   </section>
   <!-- End paper abstract -->
-
 
   <!-- Image carousel -->
   <section class="hero is-small">
@@ -181,26 +207,6 @@
   </div>
   </section>
   <!-- End image carousel -->
-   
-<!-- Youtube video -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <!-- Paper video. -->
-      <h2 class="title is-3">Video Presentation</h2>
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
-          
-          <div class="publication-video">
-            <!-- Youtube embed code here -->
-            <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End youtube video -->
 
   <!--BibTex citation -->
   <section class="section" id="BibTeX">
@@ -217,19 +223,16 @@
   </section>
 <!--End BibTex citation -->
 
-
-  <footer class="footer">
+<footer class="footer">
   <div class="container">
     <div class="columns is-centered">
       <div class="column is-8">
-        <div class="content">
-
+        <div class="content has-text-centered">
           <p>
-            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
             You are free to borrow the source code of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
             Commons Attribution-ShareAlike 4.0 International License</a>.
           </p>
-
         </div>
       </div>
     </div>
@@ -242,5 +245,5 @@
 
 <!-- End of Statcounter Code -->
 
-  </body>
-  </html>
+</body>
+</html>
