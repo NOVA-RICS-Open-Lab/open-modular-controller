@@ -2936,7 +2936,8 @@ a.tag:hover {
     color: #4a4a4a;
     font-size: 1.25rem;
     font-weight: 400;
-    line-height: 1.25
+    line-height: 1.25;
+    margin-top: 10px
 }
 
 .subtitle strong {
