@@ -106,4 +106,4 @@ If you use or intend to build on top of  the work in this repo, please consider 
 This repository is released under the MIT License. Please see the [LICENSE](LICENSE) file for more details.
 
 ## <div align="center">Contacts</div>
-For any questions regarding this or any other project please contact us at novaricsopenlab@gmail.com or enroll in our [Discussionw Forum](https://github.com/NOVA-RICS-Open-Lab/open-modular-controller/discussions) for sharing your ideas and sharing projects.
+For any questions regarding this or any other project please contact us at novaricsopenlab@gmail.com or enroll in our [Discussion Forum](https://github.com/NOVA-RICS-Open-Lab/open-modular-controller/discussions) for sharing your ideas and sharing projects.
