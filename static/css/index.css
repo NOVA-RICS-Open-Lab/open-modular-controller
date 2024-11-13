@@ -114,6 +114,15 @@ body {
   overflow: hidden;
 }
 
+.results-carousel .slider {
+  padding-bottom: 45px;
+}
+
+.slider-navigation-previous,
+.slider-navigation-next {
+  transform: translateY(-50%);
+}
+
 .results-carousel .item {
   margin: 5px;
   overflow: hidden;
