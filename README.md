@@ -2,7 +2,7 @@
 
 # Open Modular Controller for Automation Technologies
 [![License: MIT](https://img.shields.io/badge/License-MIT-red.svg)](https://opensource.org/licenses/MIT)
-[![DOI](https://img.shields.io/badge/DOI-ICPS_2024-royalblue)](https://doi.org/10.1109/ICPS59941.2024.10639979)
+[![DOI](https://img.shields.io/badge/DOI-ICPS_2024-darkblue)](https://doi.org/10.1109/ICPS59941.2024.10639979)
 [![NOVA SST: Thesis](https://img.shields.io/badge/NOVA_SST-Thesis-blue)](https://run.unl.pt/handle/10362/175433)
 
 [Joao Potier](https://pt.linkedin.com/in/jo%C3%A3o-potier-5b1301228?trk=public_profile_samename-profile)<sup>1</sup>, 
