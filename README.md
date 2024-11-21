@@ -2,7 +2,8 @@
 
 # Open Modular Controller for Automation Technologies
 [![License: MIT](https://img.shields.io/badge/License-MIT-red.svg)](https://opensource.org/licenses/MIT)
-[![DOI](https://zenodo.org/badge/DOI/10.1109/ICPS59941.2024.10639979.svg)](https://doi.org/10.1109/ICPS59941.2024.10639979)
+[![DOI](https://img.shields.io/badge/DOI-ICPS_2024-royalblue)](https://doi.org/10.1109/ICPS59941.2024.10639979)
+[![NOVA SST: Thesis](https://img.shields.io/badge/NOVA_SST-Thesis-blue)](https://run.unl.pt/handle/10362/175433)
 
 [Joao Potier](https://pt.linkedin.com/in/jo%C3%A3o-potier-5b1301228?trk=public_profile_samename-profile)<sup>1</sup>, 
 [Miguel Arvana](https://scholar.google.com/citations?user=UBvr388AAAAJ&hl=pt-PT)<sup>1</sup>,
@@ -21,7 +22,7 @@ Lisbon, 2829-516 Lisbon, Portugal
       This work proposes the development of a controller, with modularity and flexibility as the core ideas, that allows for the integration of open-source standards like the proprietary technologies used in emergent factories and automation technologies. The implementation of this architecture led to the development of a prototype modular industrial controller that is, on average, a quarter of the cost of the new generation of industrial controllers. The developed controller was tested and validated using some educational kits.
     </td>
     <td style="vertical-align: top;">
-      <img style="width: 1100px" src="imgs/PCB_4.jpg" alt="pcb" width="200"/>
+      <img style="width: 1100px" src="imgs/pcb.jpg" alt="pcb" width="200"/>
     </td>
   </tr>
 </table>
